@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QMainWindow, QApplication, QDoubleSpinBox
+from PySide6.QtWidgets import QMainWindow, QApplication
 from plotterWindow import Ui_MainWindow
 import sys
 import numpy as np
