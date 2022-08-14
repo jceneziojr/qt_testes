@@ -2,7 +2,6 @@ from PySide6.QtWidgets import QMainWindow, QApplication, QDoubleSpinBox
 from plotterWindow import Ui_MainWindow
 import sys
 import numpy as np
-from MatPlotLibWidget import mplwidget
 
 '''As seguintes linhas devem ser adicionadas se o arquivo plotterWindow for modificado pelo QtDesigner, no método "retranslateUI"
         string1="<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">e</span><span style=\" font-size:12pt; vertical-align:super;\">" + str(round(self.spin_exp.value(), 2)) +"t</span><span style=\" font-size:12pt;\">cos(" + str(round(self.spin_omega.value(), 2)) +"t+" + str(round(self.spin_phi.value(), 2)) +")</span></p></body></html>"
@@ -11,7 +10,7 @@ from MatPlotLibWidget import mplwidget
     e a segunda atribui o valor da string da primeira linha no label
 '''
 
-class mainWindow(QMainWindow, Ui_MainWindow, ):
+class mainWindow(QMainWindow, Ui_MainWindow):
     t = []
     c = 0
     w = 0
